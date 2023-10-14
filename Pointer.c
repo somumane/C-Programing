@@ -5,6 +5,9 @@ void main(){
     int a=10,b=20;
     int *p,*q;
     p=&a;
+ //   p=&a,&b; this is also store a because = precidence &a
+ // p=(&a,&b); this stores b because here comes () its goes L to R 
+ // *p=30; this will changes a value 30
     q=&b;
     printf("The value of a=%d\n",a);
     printf("The value of b=%d\n",b);
